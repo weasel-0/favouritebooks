@@ -1,13 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/tailwind.css" />
+        <title>favourite books</title>
+    </head>
+    <body>
+        <div
+            class="leading-snug text-sky-900 bg-sky-50 px-4 py-8 md:p-12 text-base md:text-xl min-h-screen"
+        >
+            <div class="max-w-6xl m-auto">
+                <main class="mb-20">
+                    <div class="mb-20 flex flex-row justify-between">
+                        <p class="text-6xl font-extrabold">Favourite books</p>
+                        <button
+                            class="underline underline-offset-4 hover:italic font-base font-sans"
+                            id="refreshBooks"
+                        >
+                            Refresh
+                        </button>
+                    </div>
+                    <div class="font-sans">
+                        <div
+                            class="grid grid-cols-12 gap-2 font-display font-semibold mb-1"
+                        >
+                            <div class="col-span-4">Book</div>
+                            <div class="col-span-3">Author</div>
+                            <div class="col-span-3">Year</div>
+                            <div class="col-span-2">Pages</div>
+                        </div>
+                        <div
+                            class="border-t border-sky-900 border-opacity-50 leading-none text-base md:text-xl"
+                        >
+                            <div class="books"></div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script type="module" src="/main.js"></script>
+    </body>
 </html>
