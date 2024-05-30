@@ -6,4 +6,10 @@ Built with
 - Tailwind CSS
 - Vanilla JS
 
-For setting it up -
+## Preview
+
+<details>
+
+![project preview](preview.jpeg)
+
+</details>
